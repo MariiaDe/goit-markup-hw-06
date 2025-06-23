@@ -49,12 +49,15 @@ img {
     background-color: #404BBF;
     border-radius: 2px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .page .link.link-studio {
     position: relative;
     text-decoration: none;
     color: #404BBF;
+    padding-bottom: 18px;
+    
 }
 
 .contacts .link.link-contacts {
@@ -344,19 +347,25 @@ span {
 }
 
 .section {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .page-main {
     background-color: #2E2F42;
-    padding: 188px 0;
-    max-width: 1440px;
+    padding: 72px 0;
+    max-width: 320px;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Darkmb.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     
+}
+
+@media (min-resolution: 192dpi) {
+  .page-main {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Darkmb2x.jpg);
+  }
 }
 
 .page-main .page-studio {
@@ -1048,8 +1057,8 @@ footer .link {
 @media (min-width: 768px) and (max-width: 1157px) {
     .container{
         max-width: 1157px;
-        padding: 0 16px; 
-    
+        padding: 0 16px;
+        
     }
     
     .header-container {
@@ -1076,6 +1085,24 @@ footer .link {
         display: flex;
         align-items: center;
         gap: 40px;
+    }
+
+    .page-main {
+        background-color: #2E2F42;
+        padding: 112px 0;
+        max-width: 768px;
+        margin: 0 auto;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Darktb.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    
+    }
+
+    @media (min-resolution: 192dpi) {
+        .page-main {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Darktb2x.jpg);
+        }
     }
 
     .contacts {
@@ -1179,11 +1206,13 @@ footer .link {
         margin: 0 auto;
     }
 
+
+
     .features-list {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .features-list .images {
@@ -1199,6 +1228,10 @@ footer .link {
         text-align: left;
     }
 
+    .team-container {
+        width: 584px;
+    }
+
     .images-contacts {
         display: flex;
         align-items: center;
@@ -1212,6 +1245,15 @@ footer .link {
         border-radius: 0 0 4px 4px;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2,1);
+    }
+
+    .list-team-list  {
+        
+        padding: 32px 0;
+    }
+
+    .portfolio-container {
+        width: 584px;
     }
 
     .list-portfolio {
@@ -1234,7 +1276,10 @@ footer .link {
         flex-wrap: wrap;
         align-items: flex-start;
 
+        
     }
+
+
 
     .logo-footer {
         display: inline-block; 
@@ -1246,7 +1291,7 @@ footer .link {
         display: block;
         margin-left: 0;
         margin-right: 24px;
-        margin-bottom: 72px;
+       
 
     }
     
@@ -1255,7 +1300,7 @@ footer .link {
         flex-direction: column;
         justify-content: center;
         margin-left: 0;
-        margin-right: 24px;
+        margin-top: 0;
     }
 
     .text-footer {
@@ -1314,6 +1359,7 @@ footer .link {
         padding-left: 15px; 
         padding-right: 15px;
         margin: 0 auto;
+        align-items: center;
     }
 
     .page-header {
@@ -1332,6 +1378,28 @@ footer .link {
         display: flex;
         align-items: center;
         gap: 40px;
+        
+    }
+
+    .page-main {
+        background-color: #2E2F42;
+        padding: 188px 0;
+        max-width: 1440px;
+        margin: 0 auto;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    @media (min-resolution: 192dpi) {
+        .page-main {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office2x.jpg);
+        }
+    }
+
+    .section {
+        padding: 120px 0;
     }
 
     
@@ -1453,6 +1521,10 @@ footer .link {
         color: #2E2F42;
     }
 
+    .title-features {
+        text-align: left;
+    }
+
     .section-text {
         font-weight: 400;
         font-size: 16px;
@@ -1540,7 +1612,7 @@ footer .link {
         flex-direction: column;
         justify-content: center;
         margin-left: 0;
-        margin-right: 120px;
+        margin-right: 80px;
     }
 
     .text-footer {
